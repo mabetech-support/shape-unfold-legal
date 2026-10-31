@@ -1,18 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shape Unfold — Legal</title>
-<style>
-  body { font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif; max-width: 600px; margin: 80px auto; padding: 0 20px; color: #1a1a1a; }
-  h1 { font-size: 1.5em; }
-  a { display: block; margin: 12px 0; color: #0366d6; font-size: 1.1em; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MaBeTech – apps</title>
+  <meta name="description" content="MaBeTech – apps by Marek Benešovský, independent software developer from the Czech Republic.">
+  <!-- Google Search Console: sem vlož ověřovací meta tag, např.
+  <meta name="google-site-verification" content="XXXXXXXX"> -->
+  <style>
+    :root {
+      --bg: #f6f8fb;
+      --grid: #e3e9f2;
+      --text: #1b2430;
+      --muted: #5a6778;
+      --line: #c9d3e0;
+      --accent: #1f5fae;
+      color-scheme: light;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121821;
+        --grid: #1b2430;
+        --text: #e4e9f0;
+        --muted: #9aa7b8;
+        --line: #2e3a4a;
+        --accent: #7fb0f0;
+        color-scheme: dark;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+      background-image:
+        linear-gradient(var(--grid) 1px, transparent 1px),
+        linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+      background-size: 24px 24px;
+    }
+    main {
+      max-width: 40rem;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 3rem;
+    }
+    h1 {
+      font-size: clamp(2rem, 6vw, 2.75rem);
+      line-height: 1.1;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin: 0 0 0.75rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin: 3rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+    p { margin: 0 0 1rem; }
+    .lead { color: var(--muted); max-width: 32rem; }
+    a { color: var(--accent); text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .app { margin-bottom: 2rem; }
+    .app h3 { font-size: 1.125rem; margin: 0 0 0.25rem; }
+    .app p { margin-bottom: 0.5rem; }
+    .links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; font-size: 0.9375rem; }
+    dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.35rem 1.5rem; margin: 0; }
+    dt { color: var(--muted); }
+    dd { margin: 0; }
+    footer { margin-top: 3rem; font-size: 0.875rem; color: var(--muted); }
+  </style>
 </head>
 <body>
-<h1>Shape Unfold</h1>
-<a href="terms.html">Terms of Use</a>
-<a href="privacy.html">Privacy Policy</a>
+  <main>
+    <h1>MaBeTech</h1>
+    <p class="lead">MaBeTech is the app label of Marek Benešovský, an independent software developer from the Czech Republic. It publishes small, focused apps for Windows and Android.</p>
+
+    <h2>Apps</h2>
+
+    <div class="app">
+      <h3>Název aplikace</h3>
+      <p>Jedna nebo dvě věty o tom, co aplikace dělá a pro koho je.</p>
+      <div class="links">
+        <a href="privacy.html">Privacy policy</a>
+        <a href="terms.html">Terms of use</a>
+        <!-- <a href="https://play.google.com/store/apps/details?id=cz.example.app">Google Play</a> -->
+        <!-- <a href="https://apps.microsoft.com/detail/XXXXXXXX">Microsoft Store</a> -->
+      </div>
+    </div>
+
+    <h2>Contact</h2>
+    <dl>
+      <dt>Brand</dt>     <dd>MaBeTech</dd>
+      <dt>Operator</dt>  <dd>Marek Benešovský</dd>
+      <dt>Company ID</dt><dd>IČO 12345678</dd>
+      <dt>Address</dt>   <dd>Ulice 123, 672 01 Moravský Krumlov, Czech Republic</dd>
+      <dt>Email</dt>     <dd><a href="mailto:mabetech.support@gmail.com">mabetech.support@gmail.com</a></dd>
+    </dl>
+
+    <footer>© 2026 MaBeTech · Marek Benešovský</footer>
+  </main>
 </body>
 </html>
+
